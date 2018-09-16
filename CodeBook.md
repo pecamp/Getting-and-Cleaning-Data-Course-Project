@@ -3,9 +3,6 @@ title: "CodeBook"
 output: github_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ## Description
 
@@ -36,10 +33,11 @@ The original dataset includes the following files:
 
 - `test/y_test.txt`: Test labels.
 
-=========================================
+
 ## Processing Steps
+
 `run_analysis.R` performs the following five steps on the original data and returns `tidyData.txt` to your working directoy:
-=========================================
+
 
 1. Downloads, unzips, and merges the training and the test sets to create one data set from the [source data](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 2. Extracts only data containing Mean and Standard Deviation pairs (i.e. variables with a mean with an associated measure of spread, a standard deviation; NOTE: means not labeled as mean() or with an associated standard deviation were not extracted, intentionally)
@@ -50,73 +48,73 @@ The original dataset includes the following files:
 ## Final Data
 
 The column names are:
-`Subjects`
-`Activities`
-`TimeBodyAccelerometerMean-X`
-`TimeBodyAccelerometerMean-Y`
-`TimeBodyAccelerometerMean-Z`
-`TimeBodyAccelerometerSTD-X`
-`TimeBodyAccelerometerSTD-Y`
-`TimeBodyAccelerometerSTD-Z`
-`TimeGravityAccelerometerMean-X`
-`TimeGravityAccelerometerMean-Y`
-`TimeGravityAccelerometerMean-Z`
-`TimeGravityAccelerometerSTD-X`
-`TimeGravityAccelerometerSTD-Y`
-`TimeGravityAccelerometerSTD-Z`
-`TimeBodyAccelerometerJerkMean-X`
-`TimeBodyAccelerometerJerkMean-Y`
-`TimeBodyAccelerometerJerkMean-Z`
-`TimeBodyAccelerometerJerkSTD-X`
-`TimeBodyAccelerometerJerkSTD-Y`
-`TimeBodyAccelerometerJerkSTD-Z`
-`TimeBodyGyroscopeMean-X`
-`TimeBodyGyroscopeMean-Y`
-`TimeBodyGyroscopeMean-Z`
-`TimeBodyGyroscopeSTD-X`
-`TimeBodyGyroscopeSTD-Y`
-`TimeBodyGyroscopeSTD-Z`
-`TimeBodyGyroscopeJerkMean-X`
-`TimeBodyGyroscopeJerkMean-Y`
-`TimeBodyGyroscopeJerkMean-Z`
-`TimeBodyGyroscopeJerkSTD-X`
-`TimeBodyGyroscopeJerkSTD-Y`
-`TimeBodyGyroscopeJerkSTD-Z`
-`TimeBodyAccelerometerMagnitudeMean`
-`TimeBodyAccelerometerMagnitudeSTD`
-`TimeGravityAccelerometerMagnitudeMean`
-`TimeGravityAccelerometerMagnitudeSTD`
-`TimeBodyAccelerometerJerkMagnitudeMean`
-`TimeBodyAccelerometerJerkMagnitudeSTD`
-`TimeBodyGyroscopeMagnitudeMean`
-`TimeBodyGyroscopeMagnitudeSTD`
-`TimeBodyGyroscopeJerkMagnitudeMean`
-`TimeBodyGyroscopeJerkMagnitudeSTD`
-`FrequencyBodyAccelerometerMean-X`
-`FrequencyBodyAccelerometerMean-Y`
-`FrequencyBodyAccelerometerMean-Z`
-`FrequencyBodyAccelerometerSTD-X`
-`FrequencyBodyAccelerometerSTD-Y`
-`FrequencyBodyAccelerometerSTD-Z`
-`FrequencyBodyAccelerometerJerkMean-X`
-`FrequencyBodyAccelerometerJerkMean-Y`
-`FrequencyBodyAccelerometerJerkMean-Z`
-`FrequencyBodyAccelerometerJerkSTD-X`
-`FrequencyBodyAccelerometerJerkSTD-Y`
-`FrequencyBodyAccelerometerJerkSTD-Z`
-`FrequencyBodyGyroscopeMean-X`
-`FrequencyBodyGyroscopeMean-Y`
-`FrequencyBodyGyroscopeMean-Z`
-`FrequencyBodyGyroscopeSTD-X`
-`FrequencyBodyGyroscopeSTD-Y`
-`FrequencyBodyGyroscopeSTD-Z`
-`FrequencyBodyAccelerometerMagnitudeMean`
-`FrequencyBodyAccelerometerMagnitudeSTD`
-`FrequencyBodyAccelerometerJerkMagnitudeMean`
-`FrequencyBodyAccelerometerJerkMagnitudeSTD`
-`FrequencyBodyGyroscopeMagnitudeMean`
-`FrequencyBodyGyroscopeMagnitudeSTD`
-`FrequencyBodyGyroscopeJerkMagnitudeMean`
-`FrequencyBodyGyroscopeJerkMagnitudeSTD`
+-`Subjects`
+-`Activities`
+-`TimeBodyAccelerometerMean-X`
+-`TimeBodyAccelerometerMean-Y`
+-`TimeBodyAccelerometerMean-Z`
+-`TimeBodyAccelerometerSTD-X`
+-`TimeBodyAccelerometerSTD-Y`
+-`TimeBodyAccelerometerSTD-Z`
+-`TimeGravityAccelerometerMean-X`
+-`TimeGravityAccelerometerMean-Y`
+-`TimeGravityAccelerometerMean-Z`
+-`TimeGravityAccelerometerSTD-X`
+-`TimeGravityAccelerometerSTD-Y`
+-`TimeGravityAccelerometerSTD-Z`
+-`TimeBodyAccelerometerJerkMean-X`
+-`TimeBodyAccelerometerJerkMean-Y`
+-`TimeBodyAccelerometerJerkMean-Z`
+-`TimeBodyAccelerometerJerkSTD-X`
+-`TimeBodyAccelerometerJerkSTD-Y`
+-`TimeBodyAccelerometerJerkSTD-Z`
+-`TimeBodyGyroscopeMean-X`
+-`TimeBodyGyroscopeMean-Y`
+-`TimeBodyGyroscopeMean-Z`
+-`TimeBodyGyroscopeSTD-X`
+-`TimeBodyGyroscopeSTD-Y`
+-`TimeBodyGyroscopeSTD-Z`
+-`TimeBodyGyroscopeJerkMean-X`
+-`TimeBodyGyroscopeJerkMean-Y`
+-`TimeBodyGyroscopeJerkMean-Z`
+-`TimeBodyGyroscopeJerkSTD-X`
+-`TimeBodyGyroscopeJerkSTD-Y`
+-`TimeBodyGyroscopeJerkSTD-Z`
+-`TimeBodyAccelerometerMagnitudeMean`
+-`TimeBodyAccelerometerMagnitudeSTD`
+-`TimeGravityAccelerometerMagnitudeMean`
+-`TimeGravityAccelerometerMagnitudeSTD`
+-`TimeBodyAccelerometerJerkMagnitudeMean`
+-`TimeBodyAccelerometerJerkMagnitudeSTD`
+-`TimeBodyGyroscopeMagnitudeMean`
+-`TimeBodyGyroscopeMagnitudeSTD`
+-`TimeBodyGyroscopeJerkMagnitudeMean`
+-`TimeBodyGyroscopeJerkMagnitudeSTD`
+-`FrequencyBodyAccelerometerMean-X`
+-`FrequencyBodyAccelerometerMean-Y`
+-`FrequencyBodyAccelerometerMean-Z`
+-`FrequencyBodyAccelerometerSTD-X`
+-`FrequencyBodyAccelerometerSTD-Y`
+-`FrequencyBodyAccelerometerSTD-Z`
+-`FrequencyBodyAccelerometerJerkMean-X`
+-`FrequencyBodyAccelerometerJerkMean-Y`
+-`FrequencyBodyAccelerometerJerkMean-Z`
+-`FrequencyBodyAccelerometerJerkSTD-X`
+-`FrequencyBodyAccelerometerJerkSTD-Y`
+-`FrequencyBodyAccelerometerJerkSTD-Z`
+-`FrequencyBodyGyroscopeMean-X`
+-`FrequencyBodyGyroscopeMean-Y`
+-`FrequencyBodyGyroscopeMean-Z`
+-`FrequencyBodyGyroscopeSTD-X`
+-`FrequencyBodyGyroscopeSTD-Y`
+-`FrequencyBodyGyroscopeSTD-Z`
+-`FrequencyBodyAccelerometerMagnitudeMean`
+-`FrequencyBodyAccelerometerMagnitudeSTD`
+-`FrequencyBodyAccelerometerJerkMagnitudeMean`
+-`FrequencyBodyAccelerometerJerkMagnitudeSTD`
+-`FrequencyBodyGyroscopeMagnitudeMean`
+-`FrequencyBodyGyroscopeMagnitudeSTD`
+-`FrequencyBodyGyroscopeJerkMagnitudeMean`
+-`FrequencyBodyGyroscopeJerkMagnitudeSTD`
 
 The means and standard deviations are centered and thus are between -1 and 1. 
