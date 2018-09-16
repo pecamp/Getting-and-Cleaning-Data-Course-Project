@@ -1,9 +1,3 @@
----
-title: "CodeBook"
-output: github_document
----
-
-
 ## Description
 
 [Original Source Data](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)

@@ -1,8 +1,3 @@
----
-title: "README.md"
-output: github_document
----
-
 ## Contents of the Repository
 
 This repo represents the course project for the Getting and Cleaning Data online course in the Coursera Data Science Specialization.
