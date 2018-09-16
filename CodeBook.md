@@ -53,6 +53,7 @@ The column names are:
 *`TimeBodyAccelerometerMean-X`
 *`TimeBodyAccelerometerMean-Y`
 *`TimeBodyAccelerometerMean-Z`
+
 *`TimeBodyAccelerometerSTD-X`
 *`TimeBodyAccelerometerSTD-Y`
 *`TimeBodyAccelerometerSTD-Z`
